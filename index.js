@@ -11,3 +11,11 @@ prompt.get(['test'], function(err, result) {
   console.log('testing the prompt from user');
   console.log('here is the actual result:', result.test);
 })
+
+
+// below code is the actual game
+var board = [
+  [null, null, null],
+  [null, null, null],
+  [null, null, null]
+];
