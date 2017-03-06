@@ -88,9 +88,17 @@ function colWin(board) {
 }
 
 function rotateBoard(board) {
-  return board.map(function(col, i) {
-    return board.map(function(row, j) {
-      return row[i][j];
+  return board.map(function(row, i) {
+    return board.map(function(col, j) {
+      return row[j][i];
     });
   });
 }
+
+function validMove(pos) {
+  if(pos.length === 4 && pos.indexOf(',') > -1) {
+    return true;
+  }
+}
+
+play('X');
